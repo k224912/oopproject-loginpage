@@ -3,6 +3,10 @@
     padding :0;
     font-family: sans-serif;
 }
+.sidebyside{
+    display: flex;
+}
+
 
 .background_img{
     height: 100%;
@@ -21,8 +25,8 @@
     margin-top: 100px;
     background: grey;
     padding: 5px ;
-    
     border-radius: 50px;
+    overflow: hidden;
 }
 
 .button_box{
@@ -56,10 +60,18 @@
 }
 
 
-.sign_in{
-    margin-left : 30%;
-    margin-top: 15%;
+.log_in{
+    margin-left : 22%;
+    margin-top: 10%;
     transition :.5s;
+    position: relative;
+}
+
+.sign_up{
+    margin-left : 22%;
+    margin-top: 10%;
+    transition :.5s;
+    position: relative;
 }
 
 .email_password{
@@ -74,7 +86,7 @@
 
 
 
-.signin{
+.login{
     width: 160px;
     height:30px;
     cursor: pointer;
@@ -87,9 +99,29 @@
     border-radius: 40px;
 
 }
-.s2{
+.signup{
+    width: 160px;
+    height:30px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 23px 5px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    text-align-last: center;
+    border:0;
+    outline:none;
+    border-radius: 40px;
+}
+.button{
     background-color:transparent;
      width: 160px;
      height: 30px;
      border-radius: 40px;
+}
+
+#login{
+    left:50px;
+}
+
+#signup{
+    left:450px;
 }

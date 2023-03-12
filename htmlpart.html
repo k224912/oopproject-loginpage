@@ -9,22 +9,22 @@
             <div class="form_box">
                 <div class="button_box">
                     <div id="background_button"></div>
-                    <button class="toggle_button">log in</button> 
-                    <button class="toggle_button">sign up</button> 
+                    <button type="button" class="toggle_button" onclick="login()">log in</button> 
+                    <button type="button" class="toggle_button" onclick="signup()">sign up</button> 
                 </div>
-                    <div>
-                        <form class="sign_in">
+                    <div class="sidebyside">
+                        <form  id ="login" class="log_in">
                             <div>
                                 <input class="email_password" type="text" placeholder="enter id">
                             </div>
                             <div>
                                 <input class="email_password" type="password" placeholder="enter password">
                             </div>
-                            <div class="signin">
-                                    <button class="s2">log in</button>
+                            <div class="login">
+                                    <button type="submit" class="button">log in</button>
                             </div>
                         </form>
-                        <form class="sign_in">
+                        <form id = "signup" class="sign_up">
                             <div>
                                 <input class="email_password" type="text" placeholder="enter id">
                                 <input class="email_password" type="email" placeholder="enter email">
@@ -32,13 +32,31 @@
                             <div>
                                 <input class="email_password" type="password" placeholder="enter password">
                             </div>
-                                <div class="signin">
-                                    <button class="s2">sign in</button>
+                                <div class="signup">
+                                    <button type="submit" class="button">sign in</button>
                             </div>
                         </form>
                     </div>
             </div>
         </div>
-    </body>
+     <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("background_button");
+        
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "-250px";
+            z.style.left = "90px";
 
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "250px";
+            z.style.left = "0px";
+
+        }
+     </script>
+
+    </body>
 </html>
